@@ -13,7 +13,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .header.scroll {
@@ -189,6 +189,21 @@ body {
 	max-width: 100%;
 	object-fit: cover;
 	border-radius: 8px;
+}
+
+.lgpd {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+form .form-text {
+	font-size: 14px;
+	font-family: "Roboto", serif;
+	margin: 0 0 5px 5px;
+}
+
+.form-checkbox {
+	margin-top: 5px;
 }
 
 .depoimentos-section {
