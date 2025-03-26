@@ -206,6 +206,11 @@ form .form-text {
 	margin-top: 5px;
 }
 
+form textarea {
+	width: 100%;
+	min-height: 70px;
+}
+
 .depoimentos-section {
 	background: linear-gradient(120deg, #03878f, #113245);
 	padding: 30px 0;
