@@ -88,7 +88,7 @@ body {
 
 .hamburger.active .nv1 {transform: rotate(45deg);top: 10px;}
 .hamburger.active .nv2{opacity: 0;}
-.hamburger.active .nv3 {transform: rotate(-45deg);bottom: 11px;}
+.hamburger.active .nv3 {transform: rotate(-45deg);bottom: 10px;}
 
 .banner-section {
 	background-color: #fff;
@@ -96,6 +96,15 @@ body {
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 30px;
+}
+
+.banner-section::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.18);
+	z-index: 1;
+	position: absolute;
 }
 
 
@@ -109,16 +118,12 @@ body {
 }
 
 .banner-info {
-	/* position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 100%; */
-
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	height: 100vh;
+	z-index: 2;
 }
 
 .banner-title {
@@ -127,16 +132,18 @@ body {
 	font-size: 32px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 600;
-	color: #113245;
+	color: #fff;
+	text-shadow: 1px 1px #113245;
 }
 
 .banner-text {
 	margin-top: 5px;
-	margin-bottom: 0;
+	margin-bottom: 30px;
 	font-size: 18px;
 	font-family: "Roboto", sans-serif;
-	color: #113245;
+	color: #fff;
 	font-weight: 600;
+	text-shadow: 1px 1px #113245;
 }
 
 .call-to-video {
