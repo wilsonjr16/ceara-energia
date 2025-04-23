@@ -183,14 +183,74 @@ body {
 }
 
 .negocio-section h2 {
+	color: #113245;
 	font-size: 32px;
 	font-weight: bold;
 	font-family: "Roboto", serif;
 }
 
+.negocio-section h3 {
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "Roboto", serif;
+	color: #113245;
+}
+
 .negocio-section p {
 	font-size: 18px;
 	font-family: "Roboto", serif;
+}
+
+.negocio-lista {
+	list-style: none;
+	padding: 0;
+}
+
+.negocio-lista li {
+	position: relative;
+	font-size: 18px;
+	font-family: "Roboto", serif;
+	color: #113245;
+	padding: 25px 60px;
+}
+
+.negocio-lista li::before {
+	content: '';
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 100%;
+    border-color: #113245;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+	transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.negocio-lista li:nth-child(1)::before {
+	content: '1';
+}
+
+.negocio-lista li:nth-child(2)::before {
+	content: '2';
+}
+
+.negocio-lista li:nth-child(3)::before {
+	content: '3';
+}
+
+.negocio-lista li:nth-child(4)::before {
+	content: '4';
+}
+
+.negocio-video-col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .negocio-video {
@@ -234,12 +294,22 @@ body {
 	font-weight: bold;
 	font-family: "Roboto", serif;
 	margin-bottom: 25px;
+	color: #113245;
 }
 
 .equipe-section p {
 	margin-top: 10px;
 	font-size: 18px;
 	font-family: "Roboto", serif;
+	color: #113245;
+}
+
+.equipe-img {
+	padding: 50px 50px 0 50px;
+}
+
+.equipe-img img {
+	border-radius: 35px;
 }
 
 .servicos-section {
@@ -251,12 +321,14 @@ body {
 	font-size: 32px;
 	font-weight: bold;
 	font-family: "Roboto", serif;
+	color: #113245;
 }
 
 .servicos-section p {
 	margin-top: 10px;
 	font-size: 18px;
 	font-family: "Roboto", serif;
+	color: #113245;
 }
 
 .servico-box {
@@ -435,6 +507,7 @@ body {
 .servico-cta {
 	display: flex;
 	justify-content: center;
+	margin-top: 25px;
 }
 
 .servico-cta a {
@@ -507,6 +580,10 @@ body {
 
 	.banner-text {
 		font-size: 20px;
+	}
+
+	.servico-cta {
+		margin-top: 5px;
 	}
 }
 
