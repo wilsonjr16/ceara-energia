@@ -171,7 +171,17 @@ body {
 	border-color: #113245;
 }
 
-.banner-btn:hover {
+.btn-header {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Roboto", serif;
+	background-color: #113245;
+	border-color: #113245;
+	margin-left: 15px;
+}
+
+.banner-btn:hover,
+.btn-header:hover {
 	background-color: #03878f;
 	border-color: #03878f;
 }
