@@ -287,10 +287,23 @@ body {
 	color: #f7f3eb;
 }
 
-.depoimentos-img {
-	object-fit: cover;
+.carousel-item {
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-item.active {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-item img {
 	border-radius: 8px;
-	margin-top: 15px;
+}
+
+.carousel-indicators {
+	bottom: -40px;
 }
 
 .equipe-section {
@@ -580,6 +593,15 @@ body {
 	}
 }
 
+@media(max-width: 767px){ 
+	#carouselDepoimentos .carousel-control-prev {
+		left: -50px;
+	}
+	#carouselDepoimentos .carousel-control-next {
+		right: -50px;
+	}
+}
+
 @media(max-width: 768px){ 
 	.banner-info {
 		padding-top: 45px;
@@ -595,6 +617,20 @@ body {
 
 	.servico-cta {
 		margin-top: 5px;
+	}
+
+	.contact-section h2 { 
+		margin-top: 40px;
+	}
+
+}
+
+@media(min-width: 768px) {
+	#carouselDepoimentos .carousel-control-prev {
+		left: -70px;
+	}
+	#carouselDepoimentos .carousel-control-next {
+		right: -70px;
 	}
 }
 
