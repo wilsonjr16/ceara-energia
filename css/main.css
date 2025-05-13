@@ -212,6 +212,10 @@ body {
 	font-family: "Roboto", serif;
 }
 
+.negocio-img {
+	border-radius: 8px;
+}
+
 .negocio-lista {
 	display: flex;
 	list-style: none;
@@ -226,6 +230,7 @@ body {
 	font-family: "Roboto", serif;
 	color: #113245;
 	padding: 25px 0px;
+	margin-top: 50px;
 }
 
 .negocio-lista li::before {
@@ -238,7 +243,7 @@ body {
     position: absolute;
     left: 50%;
 	transform: translateX(-50%);
-    top: 0;
+    top: -50px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -265,6 +270,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 40px;
 }
 
 .negocio-video {
@@ -322,6 +328,11 @@ body {
 	font-family: "Roboto", serif;
 	margin-bottom: 25px;
 	color: #113245;
+	text-align: center;
+}
+
+.equipe-content {
+	padding: 0 80px;
 }
 
 .equipe-section p {
@@ -329,6 +340,7 @@ body {
 	font-size: 18px;
 	font-family: "Roboto", serif;
 	color: #113245;
+	text-align: center;
 }
 
 .equipe-img {
@@ -599,10 +611,10 @@ body {
 
 @media(max-width: 767px){ 
 	#carouselDepoimentos .carousel-control-prev {
-		left: -50px;
+		left: 0px;
 	}
 	#carouselDepoimentos .carousel-control-next {
-		right: -50px;
+		right: 0px;
 	}
 }
 
