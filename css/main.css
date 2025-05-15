@@ -178,6 +178,11 @@ body {
 	background-color: #113245;
 	border-color: #113245;
 	margin-left: 15px;
+	color: #fff;
+}
+
+.btn-header:hover {
+	color: #fff;
 }
 
 .banner-btn:hover,
@@ -609,6 +614,13 @@ body {
 			height: auto;
 	}
 
+	.btn-header {
+		display: inline-block;
+		margin-left: 0;
+		margin-top: 15px;
+		padding: 10px 15px!important;
+	}
+
 	.medias-navbar {
 		display: flex;
 		align-items: center;
@@ -651,6 +663,7 @@ body {
 }
 
 @media(max-width: 768px){ 
+
 	.banner-info {
 		padding-top: 45px;
 	}
