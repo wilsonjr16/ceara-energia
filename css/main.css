@@ -593,6 +593,12 @@ body {
     font-family: "Roboto", serif;
 }
 
+@media(min-width: 1200px) {
+	.negocio-section .container {
+		max-width: 1400px;
+	}
+}
+
 
 @media(max-width: 1500px){
 	.video-controler {
