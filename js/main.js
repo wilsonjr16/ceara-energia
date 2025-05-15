@@ -67,6 +67,45 @@ $(document).ready(function(){
   });
 });
 
+function animarContador(contador) {
+    const valorFinal = +contador.getAttribute('data-valor');
+    let valorAtual = 0;
+    const duracao = 3000;
+    const incremento = valorFinal / (duracao / 30);
+
+    const atualizar = () => {
+      valorAtual += incremento;
+      if (valorAtual < valorFinal) {
+        contador.textContent = Math.floor(valorAtual);
+        requestAnimationFrame(atualizar);
+      } else {
+        contador.textContent = valorFinal;
+      }
+    };
+
+    atualizar();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const contadores = document.querySelectorAll('.contador');
+
+    const observer = new IntersectionObserver((entradas, observer) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          const contador = entrada.target;
+          animarContador(contador);
+          observer.unobserve(contador); // Anima só uma vez
+        }
+      });
+    }, {
+      threshold: 0.5 // dispara quando 50% do elemento está visível
+    });
+
+    contadores.forEach(contador => {
+      observer.observe(contador);
+    });
+  });
+
 
 
 
