@@ -197,7 +197,7 @@ body {
 	font-size: 32px;
 	font-weight: bold;
 	font-family: "Roboto", serif;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .negocio-section h3 {
@@ -208,8 +208,9 @@ body {
 }
 
 .negocio-section p {
-	font-size: 18px;
+	font-size: 14px;
 	font-family: "Roboto", serif;
+	font-weight: 400;
 }
 
 .negocio-img {
@@ -220,20 +221,21 @@ body {
 	display: flex;
 	list-style: none;
 	padding: 0;
-	align-items: center;
+	align-items: self-start;
 	justify-content: space-between;
 }
 
 .negocio-lista li {
 	position: relative;
 	font-size: 18px;
+	font-weight: 500;
 	font-family: "Roboto", serif;
 	color: #113245;
-	padding: 25px 0px;
-	margin-top: 50px;
+	padding: 25px 10px;
+	margin-top: 0;
 }
 
-.negocio-lista li::before {
+/* .negocio-lista li::before {
 	content: '';
     width: 50px;
     height: 50px;
@@ -264,6 +266,11 @@ body {
 
 .negocio-lista li:nth-child(4)::before {
 	content: '4';
+} */
+
+.negocio-lista li img {
+	border-radius: 8px;
+	margin-bottom: 15px;
 }
 
 .negocio-video-col {
