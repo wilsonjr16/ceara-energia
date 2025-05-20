@@ -206,7 +206,7 @@ body {
 	width: 90px;
 	height: 90px;
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: 0;
 	background-image: url('/img/escudo-ceara-energia.svg');
 	background-size: cover;
@@ -215,7 +215,7 @@ body {
 
 .negocio-section h2 {
 	color: #f2b531;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: bold;
 	font-family: "Roboto", serif;
 	margin-bottom: 0px;
@@ -225,11 +225,11 @@ body {
 }
 
 .negocio-section h3 {
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: bold;
 	font-family: "Roboto", serif;
 	color: #113245;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	margin-left: 70px;
 }
 
@@ -771,10 +771,12 @@ body {
 
 	.negocio-section h2 {
 		font-size: 30px;
+		letter-spacing: 2px;
 	}
 
 	.negocio-section h3 {
 		font-size: 20px;
+		letter-spacing: 2px;
 	}
 
 	.empresa-section h2 {
