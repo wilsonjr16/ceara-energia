@@ -335,16 +335,42 @@ body {
 	list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-start;
 	margin: 50px 0;
 }
 
 .contador-lista li {
-	font-size: 24px;
+	font-size: 28px;
     font-weight: normal;
     font-family: "Roboto", serif;
     color: #113245;
 	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contador-lista strong {
+	color: #113245;
+	font-size: 32px;
+	line-height: 32px;
+}
+
+.contador-box {
+	display: flex;
+	height: 150px;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.contador-img {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.contador-text {
+	line-height: 28px;
 }
 
 .depoimentos-section {
@@ -757,7 +783,7 @@ body {
 
 	.contador-lista {
 		flex-direction: column;
-		align-items: self-start;
+		align-items: center;
 	}
 
 	.video-section h2 {
@@ -779,10 +805,16 @@ body {
 	.contact-section h2 { 
 		margin-top: 40px;
 		font-size: 24px;
+		text-align: center;
 	}
 
 	.contact-section p {
 		font-size: 16px;
+		text-align: center;
+	}
+
+	.contact-box-btn {
+		text-align: center;
 	}
 
 	.servicos-section p {
