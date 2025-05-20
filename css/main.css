@@ -312,11 +312,17 @@ body {
 	border-radius: 8px;
 }
 
+.video-section {
+	padding: 70px 0;
+	background: linear-gradient(120deg, #03878f, #113245);
+}
+
 .video-section h2 {
 	font-size: 32px;
     font-weight: bold;
     font-family: "Roboto", serif;
-    color: #113245;
+    color: #fff;
+	text-align: center;
 }
 
 .empresa-section {
