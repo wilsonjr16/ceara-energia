@@ -439,6 +439,16 @@ body {
 	bottom: -40px;
 }
 
+.clientes-section {
+	padding: 50px 0;
+}
+
+.clientes-section .item {
+	display: flex;
+	align-items: center;
+	min-height: 250px;
+}
+
 .equipe-section {
 	background-color: #fff;
 	margin-top: 30px;

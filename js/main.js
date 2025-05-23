@@ -32,24 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const inputTel = document.getElementById("inputTel");
-
-    inputTel.addEventListener("input", function (event) {
-      let value = event.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos
-      if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
-
-      let formattedValue = "";
-      if (value.length > 0) formattedValue = `(${value.slice(0, 2)}`;
-      if (value.length > 2) formattedValue += `) ${value.slice(2, 7)}`;
-      if (value.length > 7) formattedValue += `-${value.slice(7)}`;
-
-      event.target.value = formattedValue;
-    });
-  });
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $("#carousel-depoimentos").owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -62,6 +47,28 @@ $(document).ready(function(){
         },
         1000:{
             items:1
+        }
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#carousel-clientes").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
         }
     }
   });
