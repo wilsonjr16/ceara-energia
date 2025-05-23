@@ -449,6 +449,10 @@ body {
 	min-height: 250px;
 }
 
+.clientes-section .item img {
+	border-radius: 8px;
+}
+
 .equipe-section {
 	background-color: #fff;
 	margin-top: 30px;
