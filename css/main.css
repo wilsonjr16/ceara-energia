@@ -451,6 +451,7 @@ body {
 
 .clientes-section .item img {
 	border-radius: 8px;
+	max-height: 250px;
 }
 
 .equipe-section {
