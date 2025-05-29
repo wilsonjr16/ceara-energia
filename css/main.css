@@ -666,12 +666,12 @@ body {
 	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.18);
 }
 
-.servicos-single .navbar-brand img {
-	height: 170px;
-}
-
 .servicos-single .nav-link {
 	color: #fff;
+}
+
+.servicos-single .slice {
+	background-color: #fff;
 }
 
 .servico-section {
@@ -746,7 +746,7 @@ body {
 		display: inline-block;
 		margin-left: 0;
 		margin-top: 15px;
-		padding: 10px 15px!important;
+		margin-bottom: 10px;
 	}
 
 	.medias-navbar {
