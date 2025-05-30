@@ -661,11 +661,13 @@ body {
 }
 
 /* Single */
+.page-servicos .header,
 .servicos-single .header {
 	background-color: #113245;
 	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.18);
 }
 
+.page-servicos .nav-link,
 .servicos-single .nav-link {
 	color: #fff;
 }
