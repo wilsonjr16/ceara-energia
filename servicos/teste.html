@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceará Energia e Engenharia - Suporte Técnico da Sua Usina</title>
+    <meta property="og:title" content="Ceará Energia e Engenharia - Meu Negócio Sustentável" />
+    <meta property="og:site_name" content="Ceará Energia e Engenharia - Meu Negócio Sustentável">
+    <meta property="og:description" content="Nossa equipe técnica realiza manutenções preventivas e corretivas para assegurar o desempenho ideal do seu sistema fotovoltaico. Conte conosco para manter sua energia solar funcionando com eficiência máxima.">
+    <meta property="og:url" content="https://cearaenergia.com.br/" />
+    <meta property="og:image" content="../img/logo-vertical.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:type" content="website" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #002B5B;
+      }
+
+      .banner-top {
+        background: url('../img/FIMI0026.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 80px 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+      }
+
+      .banner-top::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        position: absolute;
+        top: 0;
+      }
+
+      .banner-top .text-content {
+        max-width: 500px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .banner-top h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px #000;
+      }
+
+      .banner-top p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px #000;
+      }
+
+      .cta-button {
+        background: #FF8800;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .8 ease-in-out;
+      }
+
+      .cta-button:hover {
+        text-decoration: none;
+      }
+
+      .section {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .section h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+        color: #002B5B;
+      }
+
+      .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .benefit {
+        max-width: 180px;
+      }
+
+      .benefit img {
+        width: 40px;
+        margin-bottom: 15px;
+      }
+
+      .benefit p {
+        font-size: 14px;
+      }
+
+      .audience-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 60px 20px;
+        background: #F8F8F8;
+      }
+
+      .audience-img {
+        max-width: 300px;
+      }
+
+      .audience-content {
+        max-width: 400px;
+        text-align: left;
+      }
+
+      .audience-content h3 {
+        font-size: 24px;
+        color: #002B5B;
+        margin-bottom: 20px;
+      }
+
+      .audience-content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .audience-content li {
+        margin-bottom: 12px;
+        padding-left: 24px;
+        position: relative;
+        font-size: 16px;
+      }
+
+      .audience-content li::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        color: #2ECC71;
+      }
+
+      @media (max-width: 768px) {
+        .banner-top {
+          text-align: center;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .benefits {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .audience-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .audience-content {
+          text-align: center;
+        }
+      }
+    </style>
+</head>
+
+<body class="lp-body suporte-tecnico-lp">
+  <main>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <h1 class="logo-box">
+                <a class="navbar-brand" href="/">
+                    <img class="img-fluid" src="../img/logo-branca-raio.png" alt="logo da Ceará Energia">
+                </a> 
+            </h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+              <div class="slice nv1"></div>
+              <div class="slice nv2"></div>
+              <div class="slice nv3"></div>
+            </div>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-5">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Início</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="nav-link btn btn-primary btn-header dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    Serviços
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/servicos/spda.html">SPDA</a>
+                    <a class="dropdown-item" href="/servicos/investidor.html">Investidor</a>
+                    <a class="dropdown-item" href="/servicos/meu-negocio-sustentavel.html">Suporte Técnico da Sua Usina</a>
+                    <a class="dropdown-item" href="/servicos/servicos-tecnicos.html">Serviços Técnicos</a>
+                    <a class="dropdown-item" href="/servicos/projetos-eletricos.html">Projetos Eletricos</a>
+                    <a class="dropdown-item" href="/servicos/bombeamento-solar.html">Bombeamento Solar</a>
+                    <a class="dropdown-item" href="/servicos/suporte-e-monitoramento.html">Suporte e Monitoramento</a>
+                    <a class="dropdown-item" href="/servicos/manutencao.html">Manutenção</a>
+                    <a class="dropdown-item" href="/servicos/kit-minha-casa-solar.html">Kit Minha Casa Solar</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary btn-header" href="https://api.whatsapp.com/send?phone=5585991347203&text=Ol%C3%A1,%20gostaria%20de%20investir%20com%20a%20Cear%C3%A1%20Energia">Invista agora!</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav medias-navbar">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/cearaenergia/" target="_blank">
+                    <img src="../img/instagram-branco.svg" alt="Instagram">
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/cearaenergia/" target="_blank">
+                    <img src="../img/facebook-branco.svg" alt="Facebook">
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/company/ceara-energia/" target="_blank">
+                    <img src="../img/linkedin-branco.svg" alt="Linkedin">
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </nav>        
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-top">
+      <div class="container">
+        <div class="text-content">
+          <h1>TRANQUILIDADE TOTAL PARA SUA USINA SOLAR</h1>
+          <p>Assine o Plano Pós-suporte e tenha assistência completa, preventiva e descomplicada.</p>
+          <a href="https://api.whatsapp.com/send?phone=5585991347203&text=Ol%C3%A1,%20gostaria%20de%20investir%20com%20a%20Cear%C3%A1%20Energia" class="cta-button">ASSINAR AGORA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="section">
+      <h2>POR QUE TER UM PLANO PÓS-SUPORTE?</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <img src="/img/manutencao-lp.png" alt="Manutenção">
+          <p>Manutenção preventiva anual incluída</p>
+        </div>
+        <div class="benefit">
+          <img src="/img/monitoramento-lp.png" alt="Monitoramento">
+          <p>Monitoramento técnico constante</p>
+        </div>
+        <div class="benefit">
+          <img src="/img/whatsapp-lp.png" alt="WhatsApp">
+          <p>Atendimento rápido e humano via WhatsApp</p>
+        </div>
+        <div class="benefit">
+          <img src="/img/financa-lp.png" alt="2ª via Enel">
+          <p>2ª via de faturas Enel sem dor de cabeça</p>
+        </div>
+        <div class="benefit">
+          <img src="/img/agenda-lp.png" alt="Agendamento">
+          <p>Agendamento automático de inspeções</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Público-alvo -->
+    <section class="audience-section">
+      <img src="/img/passos/passo-4.jpg" alt="Cliente satisfeita" class="audience-img">
+      <div class="audience-content">
+        <h3>ESSE PLANO É PARA VOCÊ QUE...</h3>
+        <ul>
+          <li>Já tem um sistema solar instalado (residência, negócio ou usina)</li>
+          <li>Precisa de suporte para questões com a Enel</li>
+          <li>Quer manutenção anual sem se preocupar</li>
+          <li>Quer evitar burocracias futuras</li>
+          <li>Gosta de previsibilidade e segurança</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="title">Conheça nossos planos de acompanhamento ⚡</div>
+        <div class="plans">
+          <div class="plan">
+            <h3>Plano Básico</h3>
+            <div class="price">R$ 49,99 / mês</div>
+            <ul>
+              <li>Assistência de Monitoramento ilimitado</li>
+              <li>Relatório de Geração Mensal ilimitado</li>
+              <li>Segunda Via Enel ilimitado</li>
+              <li>Acionamento junto à concessionária</li>
+              <li>Acionamento de Garantia</li>
+            </ul>
+          </div>
+          <div class="plan">
+            <h3>Plano Master</h3>
+            <div class="price">R$ 89,99 / mês</div>
+            <ul>
+              <li>Assistência de Monitoramento ilimitado</li>
+              <li>Relatório de Geração Mensal ilimitado</li>
+              <li>Visitas Técnicas</li>
+              <li>Acionamento junto à concessionária</li>
+              <li>50% de desconto na manutenção preventiva</li>
+              <li>Acionamento de Garantia</li>
+            </ul>
+          </div>
+          <div class="plan">
+            <h3>Plano Premium</h3>
+            <div class="price">R$ 199,99 / mês</div>
+            <ul>
+              <li>Assistência de Monitoramento ilimitado</li>
+              <li>Relatório de Geração Mensal ilimitado</li>
+              <li>1 manutenção preventiva + limpeza dos módulos</li>
+              <li>Acionamento junto à concessionária</li>
+              <li>Acionamento de Garantia</li>
+              <li>Aplicativo de monitoramento</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          Proposta válida para até 100 módulos. Será cobrado o valor de R$25,00 por módulo excedente.<br>
+          Carência de 3 meses para utilização dos serviços, com quantidades anuais. (Carência não aplicada para pagamento anual)
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/jquery-3.5.1.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/bootstrap.js"></script>
+
+</body>
+</html>

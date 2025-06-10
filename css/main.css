@@ -654,6 +654,10 @@ body {
 	z-index: 10;
 }
 
+.suporte-tecnico-lp {
+	padding-top: 80px;
+}
+
 
 .page-servicos,
 .servicos-single {
@@ -662,13 +666,15 @@ body {
 
 /* Single */
 .page-servicos .header,
-.servicos-single .header {
+.servicos-single .header,
+.suporte-tecnico-lp .header {
 	background-color: #113245;
 	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.18);
 }
 
 .page-servicos .nav-link,
-.servicos-single .nav-link {
+.servicos-single .nav-link,
+.suporte-tecnico-lp .nav-link {
 	color: #fff;
 }
 

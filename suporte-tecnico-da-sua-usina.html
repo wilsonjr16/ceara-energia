@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planos de Acompanhamento</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('sua-imagem-de-fundo.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .plan {
+      background-color: #ffffff;
+      color: #000;
+      border-radius: 12px;
+      width: 300px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .plan h3 {
+      color: #002B5B;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #FF8800;
+      margin-bottom: 20px;
+    }
+    .plan ul {
+      text-align: left;
+      padding-left: 0;
+      list-style: none;
+    }
+    .plan ul li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 22px;
+    }
+    .plan ul li::before {
+      content: '✔';
+      color: #2ecc71;
+      position: absolute;
+      left: 0;
+    }
+    .footer {
+      font-size: 13px;
+      margin-top: 40px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Conheça nossos planos de acompanhamento ⚡</div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Plano Básico</h3>
+        <div class="price">R$ 49,99 / mês</div>
+        <ul>
+          <li>Assistência de Monitoramento ilimitado</li>
+          <li>Relatório de Geração Mensal ilimitado</li>
+          <li>Segunda Via Enel ilimitado</li>
+          <li>Acionamento junto à concessionária</li>
+          <li>Acionamento de Garantia</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Plano Master</h3>
+        <div class="price">R$ 89,99 / mês</div>
+        <ul>
+          <li>Assistência de Monitoramento ilimitado</li>
+          <li>Relatório de Geração Mensal ilimitado</li>
+          <li>Visitas Técnicas</li>
+          <li>Acionamento junto à concessionária</li>
+          <li>50% de desconto na manutenção preventiva</li>
+          <li>Acionamento de Garantia</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Plano Premium</h3>
+        <div class="price">R$ 199,99 / mês</div>
+        <ul>
+          <li>Assistência de Monitoramento ilimitado</li>
+          <li>Relatório de Geração Mensal ilimitado</li>
+          <li>1 manutenção preventiva + limpeza dos módulos</li>
+          <li>Acionamento junto à concessionária</li>
+          <li>Acionamento de Garantia</li>
+          <li>Aplicativo de monitoramento</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      Proposta válida para até 100 módulos. Será cobrado o valor de R$25,00 por módulo excedente.<br>
+      Carência de 3 meses para utilização dos serviços, com quantidades anuais. (Carência não aplicada para pagamento anual)
+    </div>
+  </div>
+</body>
+</html>
