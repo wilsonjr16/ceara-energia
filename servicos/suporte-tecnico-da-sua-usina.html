@@ -37,7 +37,7 @@
       }
 
       .banner-top {
-        background: url('../img/FIMI0026.jpg') no-repeat center center;
+        background: url('../img/bg-landing.png') no-repeat center center;
         background-size: cover;
         color: white;
         padding: 80px 20px;
@@ -175,7 +175,7 @@
       .plan-section {
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        background: url('../img/usinas/usina5.jpg  ') no-repeat center center;
+        background: url('../img/bg-planos.jpg  ') no-repeat center center;
         background-size: cover;
         color: #fff;
       }
@@ -210,6 +210,17 @@
 
       .plan.basic {
         background-color: #dcf0f7;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .plan.basic .plan-header {
+        padding: 30px 15px 0 15px;
+        background-color: #087ba7;
+      }
+
+      .plan.basic .plan-body {
+        padding: 0 15px 30px 15px;
       }
 
       .plan.master {
@@ -220,8 +231,13 @@
         background-color: #003B49;
       }
 
+      .plan.master li,
+      .plan.premium li{
+        color: #fff;
+      }
+
      .plan-section .plan h3 {
-        color: #002B5B;
+        color: #fff;
         font-size: 22px;
         margin-bottom: 10px;
       }
@@ -229,7 +245,7 @@
       .plan-section .price {
         font-size: 24px;
         font-weight: bold;
-        color: #FF8800;
+        color: #fff;
         margin-bottom: 20px;
       }
 
@@ -417,16 +433,21 @@
           <div class="title">Conheça nossos planos de acompanhamento ⚡</div>
           <div class="plans">
             <div class="plan basic">
-              <h3>Plano Básico</h3>
-              <div class="price">R$ 49,99 / mês</div>
-              <ul>
-                <li>Assistência de Monitoramento ilimitado</li>
-                <li>Relatório de Geração Mensal ilimitado</li>
-                <li>Segunda Via Enel ilimitado</li>
-                <li>Acionamento junto à concessionária</li>
-                <li>Acionamento de Garantia</li>
-              </ul>
+              <div class="plan-header">
+                <h3>Plano Básico</h3>
+                <div class="price">R$ 49,99 / mês</div>
+              </div>
+              <div class="plan-body">
+                <ul>
+                  <li>Assistência de Monitoramento ilimitado</li>
+                  <li>Relatório de Geração Mensal ilimitado</li>
+                  <li>Segunda Via Enel ilimitado</li>
+                  <li>Acionamento junto à concessionária</li>
+                  <li>Acionamento de Garantia</li>
+                </ul>
+              </div>
             </div>
+
             <div class="plan master">
               <h3>Plano Master</h3>
               <div class="price">R$ 89,99 / mês</div>
@@ -439,6 +460,7 @@
                 <li>Acionamento de Garantia</li>
               </ul>
             </div>
+
             <div class="plan premium">
               <h3>Plano Premium</h3>
               <div class="price">R$ 199,99 / mês</div>
@@ -451,6 +473,7 @@
                 <li>Aplicativo de monitoramento</li>
               </ul>
             </div>
+
           </div>
           <div class="footer">
             Proposta válida para até 100 módulos. Será cobrado o valor de R$25,00 por módulo excedente.<br>
